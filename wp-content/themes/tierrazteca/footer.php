@@ -1,12 +1,12 @@
 <!-- FOOTER
 ================================================== -->
-<footer class="vending-footer">
+<footer id="footer">
     <div class="container">
         <div class="row d-flex align-items-center">
             <div class="col-10 offset-1 col-md-6 offset-md-0 wow fadeInUp">
                 <div class="row justify-content-center">
                     <div class="col-3 d-none d-md-block">
-                        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/gph/chat-vending.png" class="img-fluid" alt="">
+                        <img src="" class="img-fluid" alt="" id="chat-image">
                     </div>
                     <div class="col-9">
                         <h5>Tierra Azteca - Contacto</h5>
@@ -104,6 +104,7 @@
 <div id="anchorTags"></div>
 
 <script type="text/javascript">
+var link = document.location.pathname;
 var wow = new WOW(
   {
     boxClass:     'wow',
@@ -117,6 +118,14 @@ var wow = new WOW(
   }
 );
 // wow.init();
+$(document).ready(function () {
+    if (link.includes("maquinas-vending")) {
+        document.getElementById("footer").classList.add("vending-footer");
+        document.getElementById("chat-image").src = "<?php echo esc_url(get_template_directory_uri()); ?>/gph/chat-vending.png";
+    } else {
+        document.getElementById("chat-image").src = "<?php echo esc_url(get_template_directory_uri()); ?>/gph/chat.png";
+    }
+});
 </script>
 
 <?php wp_footer(); ?>

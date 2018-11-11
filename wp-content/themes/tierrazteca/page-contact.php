@@ -5,6 +5,56 @@
 get_header(); ?>
 
 
+<!-- NAV BAR
+================================================== -->
+<section id="main-logo" class="d-flex align-items-end hidden-sm-down">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 d-flex align-items-center">
+                <a href="<?php echo esc_url( home_url() ); ?>">
+                    <img src="<?php echo esc_url(get_template_directory_uri()); ?>/gph/grupo-azteca.png" alt="" class="img-fluid">
+                </a>
+            </div>
+            <?php 
+                wp_nav_menu( array(
+                    'theme_location'  => 'primary',
+                    'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+                    'container'       => 'nav',
+                    'container_class' => 'col-12 col-md-10 d-flex justify-content-end',
+                    'container_id'    => '',
+                    'menu_class'      => 'col-12 col-md-10 d-flex justify-content-end',
+                    'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+                    'walker'          => new WP_Bootstrap_Navwalker(),
+                ) );
+            ?>
+        </div>
+    </div>
+</section>
+
+<nav class="navbar navbar-toggleable-md bg-faded sticky-top bg-primary navbar-inverse hidden-md-up" style="background-color:#79E66F !important;">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+        data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+        aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="<?php echo esc_url( home_url() ); ?>">
+        <img src="<?php echo esc_url(get_template_directory_uri()); ?>/gph/grupo-azteca.png" width="auto" height="50" class="d-inline-block align-top" alt="">
+    </a>
+    <?php 
+        wp_nav_menu( array(
+            'theme_location'  => 'primary',
+            'depth'	          => 2, // 1 = no dropdowns, 2 = with dropdowns.
+            'container'       => 'div',
+            'container_class' => 'collapse navbar-collapse',
+            'container_id'    => 'navbarNavDropdown',
+            'menu_class'      => 'navbar-nav',
+            'fallback_cb'     => 'WP_Bootstrap_Navwalker::fallback',
+            'walker'          => new WP_Bootstrap_Navwalker(),
+        ) );
+    ?>
+</nav>
+
+
 <!-- HEADING
 ================================================== -->
 <section id="contact-heading" class="parallax-window d-flex align-items-center wow fadeIn">
@@ -22,7 +72,7 @@ get_header(); ?>
 
 <!-- BLUE SLOGAN
 ================================================== -->
-<section id="green-slogan">
+<section id="slogan">
     <div class="container">
         <div class="row d-flex justify-content-center">
             <h3 class="azteca-subtitle wow fadeInUp font-italic">Productos saludables de alta calidad a precios competitivos</h3>
@@ -34,55 +84,9 @@ get_header(); ?>
 <!-- PROCESS
 ================================================== -->
 <section id="process">
-    <center>
-        <h2 class="vending-title text-center wow fadeInDown">¿Cómo lo hacemos? (Tierra Vending)</h2>
-        <!-- <small class="wow fadeInDown">En 3 sencillos pasos usted y su empresa podrán comenzar a gozar de los beneficios de tener un equipo Vending en sus instalaciones.</small> -->
-    </center><br>
-    <div class="container">
-        <div class="row wow fadeInUp">
-
-            <!-- Call -->
-            <div class="col-md-4 text-xs-center">
-                <div class="card">
-                    <center>
-                        <img class="card-img-top" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index-features/call-answer.png" alt="freepik-call-answer-vector">
-                    </center>
-                    <div class="card-block">
-                        <p class="card-text">Usted nos llama.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Brief -->
-            <div class="col-md-4 text-xs-center">
-                <div class="card">
-                    <center>
-                        <img class="card-img-top" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index-features/specialist-user.png" alt="freepik-specialist-user-vector">
-                    </center>
-                    <div class="card-block">
-                        <p class="card-text">Uno de nuestros representantes lo visitará SIN NINGÚN COMPROMISO y le orientará acerca de la solución Vending ideal para su negocio.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Deal -->
-            <div class="col-md-4 text-xs-center">
-                <div class="card">
-                    <center>
-                        <img class="card-img-top" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index-features/contract.png" alt="freepik-contract-vector">
-                    </center>
-                    <div class="card-block">
-                        <p class="card-text">Se firma el respectivo contrato y listo, usted empezará a gozar de los beneficios de éste sector comercial.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br><br>
     <div class="container">
         <div class="row justify-content-center">
             <h2 class="azteca-title text-center wow fadeInDown">¿Cómo lo hacemos? (Tierra Azteca Botanas)</h2>
-            <!-- <small class="wow fadeInDown">En 4 sencillos pasos usted podrás disfrutar de nuestras deliciosas y saludables botanas.</small> -->
         </div>
     </div>
     <div class="container">
@@ -132,6 +136,52 @@ get_header(); ?>
                     </center>
                     <div class="card-block">
                         <p class="card-text">Recibe las botanas en el lugar designado.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h2 class="vending-title text-center wow fadeInDown">¿Cómo lo hacemos? (Tierra Vending)</h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row wow fadeInUp">
+
+            <!-- Call -->
+            <div class="col-md-4 text-xs-center">
+                <div class="card">
+                    <center>
+                        <img class="card-img-top" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index-features/call-answer.png" alt="freepik-call-answer-vector">
+                    </center>
+                    <div class="card-block">
+                        <p class="card-text">Usted nos llama.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brief -->
+            <div class="col-md-4 text-xs-center">
+                <div class="card">
+                    <center>
+                        <img class="card-img-top" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index-features/specialist-user.png" alt="freepik-specialist-user-vector">
+                    </center>
+                    <div class="card-block">
+                        <p class="card-text">Uno de nuestros representantes lo visitará SIN NINGÚN COMPROMISO y le orientará acerca de la solución Vending ideal para su negocio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Deal -->
+            <div class="col-md-4 text-xs-center">
+                <div class="card">
+                    <center>
+                        <img class="card-img-top" src="<?php echo esc_url(get_template_directory_uri()); ?>/img/index-features/contract.png" alt="freepik-contract-vector">
+                    </center>
+                    <div class="card-block">
+                        <p class="card-text">Se firma el respectivo contrato y listo, usted empezará a gozar de los beneficios de éste sector comercial.</p>
                     </div>
                 </div>
             </div>
