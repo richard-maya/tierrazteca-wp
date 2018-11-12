@@ -222,7 +222,7 @@ get_header(); ?>
         </div>
 
         <div class="row d-flex justify-content-center">
-            <a href="../contacto-azteca.php#azteca-contact-form">
+            <a href="contacto">
                 <button class="btn btn-primary wow fadeInDown">¡Hablemos de negocios! <br>
                 <small>Enviar Mensaje</small></button>
             </a>

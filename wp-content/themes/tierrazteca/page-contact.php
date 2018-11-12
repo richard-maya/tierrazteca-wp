@@ -198,58 +198,66 @@ get_header(); ?>
             <div class="col-12 col-md-6 offset-md-3">
                 <h2 class="vending-title d-flex justify-content-center wow fadeInDown" id="azteca-contact-form">Contáctanos</h2>
 
-                <form class="formoid-solid-blue" method="post">
-                    <div class="row">
+                <div id="mc_embed_signup">
+                    <form action="https://iconica.us17.list-manage.com/subscribe/post?u=4f4bdc97c1da5cc68289c2430&amp;id=49f3fa257e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" novalidate>
+                        <div id="mc_embed_signup_scroll">
+                            <div class="row">
+                                <!-- Nombre -->
+                                <div class="mc-field-group form-group col-6 wow fadeInUp">
+                                    <label for="mce-FNAME">Nombre <span class="asterisk">*</span></label>
+                                    <input placeholder="" type="text" value="" name="FNAME" class="form-control required" id="mce-FNAME">
+                                </div>
+        
+                                <!-- Apellido -->
+                                <div class="mc-field-group form-group col-6 wow fadeInUp">
+                                    <label for="mce-LNAME">Apellido <span class="asterisk">*</span></label>
+                                    <input placeholder="" type="text" value="" name="LNAME" class="form-control required" id="mce-LNAME">
+                                </div>
+                            </div>
+        
+                            <div class="row">
+                                <!-- Teléfono -->
+                                <div class="mc-field-group form-group col-6 wow fadeInUp">
+                                    <label for="mce-PHONE">Teléfono <span class="asterisk">*</span></label>
+                                    <input type="tel" class="form-control required" maxlength="24" name="PHONE" placeholder="" value="" id="mce-PHONE">
+                                </div>
+        
+                                <!-- Empresa -->
+                                <div class="mc-field-group form-group col-6 wow fadeInUp">
+                                    <label for="mce-COMPANY">Empresa <span class="asterisk">*</span></label>
+                                    <input type="text" class="form-control required" value="" name="COMPANY" placeholder="" id="mce-COMPANY">
+                                </div>
+                            </div>
+        
+                            <!-- Correo Electrónico -->
+                            <div class="row">
+                                <div class="mc-field-group form-group col-12 wow fadeInUp">
+                                    <label for="mce-EMAIL">Correo Electrónico <span class="asterisk">*</span></label>
+                                    <input type="email" class="form-control required" value="" name="EMAIL" placeholder="" id="mce-EMAIL">
+                                </div>
+                            </div>
+        
+                            <!-- Mensaje -->
+                            <div class="row">
+                                <div class="mc-field-group form-group col-12 wow fadeInUp">
+                                    <label for="mce-MESSAGE">Mensaje <span class="asterisk">*</span></label>
+                                    <textarea value="" name="MESSAGE" class="form-control required" id="message" cols="20" rows="5" placeholder="" id="mce-MESSAGE"></textarea>
+                                </div>
+                            </div>
 
-                        <!-- Nombre -->
-                        <div class="form-group col-6 wow fadeInUp">
-                            <label for="nombre">Nombre *</label>
-                            <input placeholder="Nombre" type="text" name="name[first]" required="required" class="form-control" id="nombre">
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_4f4bdc97c1da5cc68289c2430_49f3fa257e" tabindex="-1" value=""></div>
+        
+                            <div class="row d-flex justify-content-center wow fadeInUp">
+                                <button class="btn btn-vending-outline" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" type="submit">Enviar Mensaje</button>
+                            </div>
                         </div>
-
-                        <!-- Apellido -->
-                        <div class="form-group col-6 wow fadeInUp">
-                            <label for="apellido">Apellido *</label>
-                            <input placeholder="Apellido" type="text" name="name[last]" required="required" class="form-control" id="apellido">
-                        </div>
-                    </div>
-
-                    <div class="row">
-
-                        <!-- Teléfono -->
-                        <div class="form-group col-6 wow fadeInUp">
-                            <label for="telefono">Teléfono *</label>
-                            <input type="tel" class="form-control" maxlength="24" name="phone" required="required" placeholder="Teléfono">
-                        </div>
-
-                        <!-- Empresa -->
-                        <div class="form-group col-6 wow fadeInUp">
-                            <label for="empresa">Empresa *</label>
-                            <input type="text" class="form-control" name="input" required="required" placeholder="Empresa">
-                        </div>
-                    </div>
-
-                    <!-- Correo Electrónico -->
-                    <div class="row">
-                        <div class="form-group col-12 wow fadeInUp">
-                            <label for="email">Correo Electrónico</label>
-                            <input type="email" class="form-control" name="email" placeholder="Correo Electrónico">
-                        </div>
-                    </div>
-
-                    <!-- Mensaje -->
-                    <div class="row">
-                        <div class="form-group col-12 wow fadeInUp">
-                            <label for="textarea">Mensaje *</label>
-                            <textarea name="textarea" class="form-control" id="message" cols="20" rows="5" required="required" placeholder="Mensaje"></textarea>
-                        </div>
-                    </div>
-
-                    <div class="row d-flex justify-content-center wow fadeInUp">
-                        <button class="btn btn-vending-outline" type="submit">Enviar Mensaje</button>
-                    </div>
-
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
     </div>

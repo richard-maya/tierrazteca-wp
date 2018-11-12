@@ -127,7 +127,7 @@ get_header(); ?>
                             <h4 class="vending-lead text-center">¿Qué máquina necesitas?</h4>
                             <p class="azteca-paragraph text-center">Conoce la opción ideal para tu empresa.</p>
                             <div class="row justify-content-center">
-                                <a href="maquinas-vending.html#vending-machines">
+                                <a href="maquinas-vending/maquinas-y-productos">
                                     <button class="btn btn-vending" type="button" name="button">Ver más</button>
                                 </a>
                             </div>
@@ -141,7 +141,7 @@ get_header(); ?>
                             <h4 class="vending-lead text-center">Productos disponibles</h4>
                             <p class="azteca-paragraph text-center">Revisa la variedad de productos que tenemos disponibles para ti.</p>
                             <div class="row justify-content-center">
-                                <a href="maquinas-vending.html#vending-products">
+                                <a href="maquinas-vending/maquinas-y-productos">
                                     <button class="btn btn-vending" type="button" name="button">Ver más</button>
                                 </a>
                             </div>
@@ -155,7 +155,7 @@ get_header(); ?>
                             <h4 class="vending-lead text-center">Empresas participantes</h4>
                             <p class="azteca-paragraph text-center">Entérate de quiénes ya cuentan con nuestros servicios.</p>
                             <div class="row justify-content-center">
-                                <a href="../index.html#customers">
+                                <a href="<?php echo esc_url( home_url() ); ?>">
                                     <button class="btn btn-vending" type="button" name="button">Ver más</button>
                                 </a>
                             </div>
