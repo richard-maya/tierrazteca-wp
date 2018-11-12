@@ -42,19 +42,19 @@
             </div>
             <div class="row justify-content-center">
                 <div class="col-6 col-md-3 justify-content-center index-box wow fadeInLeft">
-                    <a href="tierra-azteca/productos-azteca.html">
+                    <a href="botanas-azteca">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/gph/grupo-azteca.png" alt="tierra-azteca" class="img-fluid customers-animation w-75">
                     </a> <br>
-                    <center><a href="tierra-azteca/productos-azteca.html" style="text-decoration:underline;">
+                    <center><a href="botanas-azteca" style="text-decoration:underline;">
                             << Ver Más>>
                         </a></center>
                 </div>
                 <div class="col-md-3 d-none d-md-block"></div>
                 <div class="col-6 col-md-3 justify-content-center index-box wow fadeInRight">
-                    <a href="tierra-vending/tierra-vending.html">
+                    <a href="maquinas-vending">
                         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/gph/tierra-vending-toluca-logo-index.png" alt="tierra-vending" class="img-fluid customers-animation">
                     </a>
-                    <center><a href="tierra-vending/tierra-vending.html" style="text-decoration:underline;">
+                    <center><a href="maquinas-vending" style="text-decoration:underline;">
                             << Ver Más>>
                         </a></center>
                 </div>

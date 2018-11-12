@@ -11,7 +11,7 @@
                     <div class="col-9">
                         <h5>Tierra Azteca - Contacto</h5>
                         <h6>Enlace comercial y ventas directas</h6>
-                        <p class="azteca-footer">Tel: <a href="tel://55-2919-9417">(52) 55 2919-9417</a> <br>
+                        <p class="azteca-footer">Tel: <a href="tel:55-2919-9417">(52) 55 2919-9417</a> <br>
                             E-mail: <a href="mailto:contacto@tierra-azteca.com">contacto@tierra-azteca.com</a><br>
                             Toluca y Cd. de México
                         </p>
@@ -31,18 +31,18 @@
                         <p class="text-xs-center text-md-left wow fadeInUp">Tierra Azteca</p>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="index.html">Inicio</a>
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="<?php echo esc_url( home_url() ); ?>">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="tierra-azteca/productos-azteca.html">Productos
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="botanas-azteca">Productos
                             Tierra Azteca</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="tierra-vending/tierra-vending.html">Máquinas
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="maquinas-vending">Máquinas
                             Vending</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="contacto-azteca.php">Contacto</a>
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -52,19 +52,19 @@
                         <p class="text-xs-center text-md-left wow fadeInUp">Legal</p>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="aviso-legal.html">Aviso
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="aviso-legal">Aviso
                             Legal</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="condiciones-uso.html">Condiciones
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="condiciones-de-uso">Condiciones
                             de Uso</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="aviso-privacidad.html">Aviso
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="aviso-de-privacidad">Aviso
                             de Privacidad</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="sitemap.html">Mapa
+                        <a class="nav-link azteca-footer text-xs-center text-md-left wow fadeInUp" href="sitemap">Mapa
                             del Sitio</a>
                     </li>
                 </ul>
@@ -93,7 +93,8 @@
                 <?php echo date('Y'); ?> TIERRA AZTECA. Todos los derechos reservados.</p>
         </div>
         <div class="row justify-content-center wow fadeInUp">
-            <p class="text-center" id="copyright" style="margin-top: 0px !important; padding-top: 0px !important;"><i
+            <p class="text-center" id="copyright" style="margin-top: 0px !important; padding-top: 0px !important;">Desarrollado por <a href="https://iconica.mx"
+                    target="_blank" rel="author"><strong>Iconica Studio.</strong></a> &nbsp;<i
                     class="fa fa-desktop fg-lg"></i>&nbsp; ¿Necesitas una página web? &nbsp;<a href="https://iconica.mx"
                     target="_blank" rel="author"><strong>¡Contáctanos!</strong></a><a href="https://iconica.mx" rel="author"
                     target="_blank" style="display: none; visibility: hidden;">agencia diseño toluca metepec, diseño
@@ -122,8 +123,10 @@ $(document).ready(function () {
     if (link.includes("maquinas-vending")) {
         document.getElementById("footer").classList.add("vending-footer");
         document.getElementById("chat-image").src = "<?php echo esc_url(get_template_directory_uri()); ?>/gph/chat-vending.png";
+        $('ul#menu-main-menu li ul.dropdown-menu').css("background-color", "#79E66F");
     } else {
         document.getElementById("chat-image").src = "<?php echo esc_url(get_template_directory_uri()); ?>/gph/chat.png";
+        $('ul#menu-main-menu li ul.dropdown-menu').css("background-color", "#F4941B");
     }
 });
 </script>
